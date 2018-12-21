@@ -2893,34 +2893,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.66892810440413,
-          41.94396993398502,
-          0
-        ]
-      },
-      "properties": {
-        "name": "Aureon CDRR POP"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.67955791045364,
-          42.0563255973855,
-          0
-        ]
-      },
-      "properties": {
-        "name": "Enseva Datacenter"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "LineString",
         "coordinates": [
           [
