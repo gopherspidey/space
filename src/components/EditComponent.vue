@@ -18,28 +18,7 @@
             </div>
           </div>
         </div><br />
-        <table class="table table-hover">
-            <thead>
-            <tr>
-              <th>Qty</th>
-              <th>Modifier</th>
-              <th>SKU</th>
-              <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr v-for="item in SKU.items" :key="item.SKU">
-                  <td>{{ item.quantity }}</td>
-                  <td>{{ item.modifier }}</td>
-                  <td>{{ item.SKU }}</td>
-
-                    <td>
-                      <router-link :to="{name: 'edit', params: { id: SKU._id }}" class="btn btn-primary">Edit</router-link>
-                      <button class="btn btn-danger">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <StackItems v-bind:items="SKU.items"></StackItems>
         <div class="form-group">
           <button class="btn btn-primary">Update</button>
         </div>
@@ -48,8 +27,11 @@
 </template>
 
 <script>
+    import StackItems from './StackItems'
     export default {
-
+        components: {
+            StackItems
+        },
       data() {
         return {
           SKU: {}
