@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <span class="navbar-brand mb-0"><img src="./assets/Aureon_Logo_Tech_ORANGE.png" alt="Aureon Logo" height="50"></span>
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link to="/" class="nav-link">Home</router-link>
